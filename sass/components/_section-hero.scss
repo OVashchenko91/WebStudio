@@ -13,7 +13,11 @@ width: 768px;
 @media screen and (min-width: 1200px) {
 width: 1200px;
 
-   }}
+   }
+@media screen and (max-width: 767px) {
+width: 767px;
+}
+}
    
    
    .section-hero {
@@ -75,10 +79,10 @@ width: 1200px;
 }
 
     .section-hero__backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    overflow: visible;
-    }
+  opacity: 0;
+  pointer-events: none;
+  overflow: visible;
+}
 
 
     .modal{

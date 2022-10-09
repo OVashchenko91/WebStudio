@@ -17,7 +17,9 @@ width: 768px;
 width: 1200px;
 
 }
-
+@media screen and (max-width: 767px) {
+width: 767px;
+}
 }
 .visually-hidden{    
   position: absolute;
@@ -32,8 +34,19 @@ width: 1200px;
   margin: -1px;
     }
 .card-set {
-    display: flex;
-    }
+display: flex;
+ 
+}
+.card-set {
+   @media screen and (max-width: 767px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  justify-content: center;
+
+
+  }
+   }
 
     .card-set__list {
     margin-right: 30px;
@@ -42,27 +55,50 @@ width: 1200px;
     &:nth-child(1)::before {
     @include card-set;
     background-image: url("../images/antenna1.svg");
+    @media screen and (max-width: 767px) {
+  width: 354px;
     }
-
+  }
     &:nth-child(2)::before {
     @include card-set;
     background-image: url("../images/astronaut1.svg");
+    @media screen and (max-width: 767px) {
+  width: 354px;
+    }
     }
 
    &:nth-child(3)::before {
     @include card-set;
     background-image: url("../images/clock1.svg");
+    @media screen and (max-width: 767px) {
+  width: 354px;
+    }
     }
 
     &:nth-child(4)::before {
     @include card-set;
     background-image: url("../images/diagram1.svg");
+    @media screen and (max-width: 767px) {
+  width: 354px;
+    }
     }
 
     &:last-child {
     margin-right: 0px;
     }
+
 }
+
+ .card-set__list {
+  @media screen and (max-width: 767px) {
+  margin: 0px;
+  margin-bottom: 30px;
+  width: 354px;
+  }
+  }
+
+ 
+
 
     .card-set__header {
     font-size: 14px;
@@ -85,7 +121,4 @@ width: 1200px;
 
     }
 
-    
-
-
-   
+  

@@ -33,6 +33,14 @@ width: 1200px;
     display: flex;
 
     }
+    .team {
+@media screen and (max-width: 767px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  justify-content: center;
+  }
+    }
 
     .team__list {
     margin-right: 30px;
@@ -41,9 +49,17 @@ width: 1200px;
     border-radius: 0px 0px 4px 4px;
     
     &:last-child {
+    margin-right: 0px;}
+
+    @media screen and (max-width: 767px) {
     margin-right: 0px;
+    margin-bottom: 30px;
+    width: 354px;
+
     }
     }
+
+  
 
 
     .team__member {
