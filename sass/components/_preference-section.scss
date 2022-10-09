@@ -1,0 +1,79 @@
+
+.section {
+@include section;
+}
+
+.container {
+@include container;
+
+}
+.visually-hidden{    
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+    }
+.card-set {
+    display: flex;
+    }
+
+    .card-set__list {
+    margin-right: 30px;
+    text-align: left;
+    
+    &:nth-child(1)::before {
+    @include card-set;
+    background-image: url("../images/antenna1.svg");
+    }
+
+    &:nth-child(2)::before {
+    @include card-set;
+    background-image: url("../images/astronaut1.svg");
+    }
+
+   &:nth-child(3)::before {
+    @include card-set;
+    background-image: url("../images/clock1.svg");
+    }
+
+    &:nth-child(4)::before {
+    @include card-set;
+    background-image: url("../images/diagram1.svg");
+    }
+
+    &:last-child {
+    margin-right: 0px;
+    }
+}
+
+    .card-set__header {
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    color: #212121;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+    }
+
+    .card-set__text {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    font-style: normal;
+
+    }
+
+    
+
+
+   

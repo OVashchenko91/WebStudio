@@ -1,0 +1,117 @@
+.section-team {
+    @include section;
+background-color: #F5F5F5;
+    margin: 0 auto;
+
+}
+    
+    .header-team {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    font-style: normal;
+    color: #212121;
+    margin-bottom: 50px;
+    }
+    .team {
+    display: flex;
+
+    }
+
+    .team__list {
+    margin-right: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 4px 4px;
+    
+    &:last-child {
+    margin-right: 0px;
+    }
+    }
+
+
+    .team__member {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: #212121;
+    margin-top: 30px;
+    
+    }
+
+    .member__position {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    line-height: 1.18;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    }
+    .icon__svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    text-align: center;
+
+    }
+
+    
+
+    .icon__item:hover svg {
+    fill:#FFFFFF;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    
+    }
+   
+
+
+    .icon__link {
+
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-size: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; 
+    align-items: center; 
+    justify-content: space-around;
+    padding: 12px;
+    transition-property: background-color, box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-delay: 0;
+
+ &:hover,
+    &:focus{
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #2196F3;
+
+    }
+
+    &:hover,
+    &:focus {
+    fill: #FFFFFF;
+   transition-property: fill;
+   
+    }
+    }
+
+
+    .team__icons {
+    display: inline-flex;
+    margin-bottom: 30px;
+    }
+    .icon__item {
+    display: flex;
+    margin-left: 10px;
+    
+    &:first-child {
+    margin-left: 0px;
+    }
+}
+   
