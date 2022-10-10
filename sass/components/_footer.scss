@@ -1,37 +1,53 @@
 
 .page-footer {
-    display: flex;
-    background-color: hwb(235 18% 77%);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    }
-
-     .container-footer {
-    margin: 0 auto;
-    width: 1200px;
-    display: flex;
-    align-items: baseline;
-    @media screen and (min-width: 480px) {
-width: 480px;
-}
-@media screen and (min-width: 768px) {
-width: 768px;
-}
-@media screen and (min-width: 1200px) {
-width: 1200px;
-
-}
+display: flex;
+background-color: hwb(235 18% 77%);
+padding-top: 60px;
+padding-bottom: 60px;
 
 @media screen and (max-width: 767px) {
-width: 767px;
-flex-wrap: wrap;
+display: block;
 }
-    }
+}
 
-    .footer__logo{
-    @include logo;
-    color: #FFFFFF;
-    margin-bottom: 20px;}
+.container-footer {
+margin: 0 auto;
+width: 1200px;
+display: flex;
+align-items: baseline;
+@media screen and (max-width: 767px){
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+}
+
+.footer__logo{
+@include logo;
+color: #FFFFFF;
+margin-bottom: 20px;
+
+}
+
+
+.logo__footer {
+@media screen and (max-width: 767px) {
+width: 50%;
+}
+}
+
+.footer__follow {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+@media screen and (max-width: 767px) {
+width: 50%;
+}
+ }
 
     .footer__logo-color {
         @include logo;
@@ -45,16 +61,7 @@ flex-wrap: wrap;
         }
 
 
-    .footer__follow {
-    font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-
-    }
+    
 
      .footer__button::after  {
   
@@ -184,27 +191,18 @@ margin-bottom: 20px;
     &:focus 
     {
     background-color: #2196F3;
-    
     }
-    
     }
 
     .footer--social__linkedin{
     @include footer--social;
     background-image: url("../images/linkedin.svg");
-    &:hover,
-    &:focus 
-    {
+    }
+    .footer--social__linkedin:hover,
+    .footer--social__linkedin:focus {
     background-color: #2196F3;
-    
     }
-
-    }
-
-   
-
     
-   
 
     .button-client {  
     border: 1px solid #AFB1B8;

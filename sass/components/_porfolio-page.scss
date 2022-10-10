@@ -151,6 +151,7 @@ flex-wrap: wrap;
 .foto--list__images {
 display: block;
 overflow: hidden;
+
 @media screen and (max-width: 767px) {
 display: block;
 overflow: hidden;
@@ -160,11 +161,15 @@ overflow: hidden;
 opacity: 1;
 transform: translateY(0);
 }
-@media screen and (max-width: 767px) {
-hover .foto--list__overlay::before{
+
+}
+.foto--list__images:hover .foto--list__overlay::before{
 opacity: 1;
 transform: translateY(0);
-}
+
+@media screen and (max-width: 767px) {
+opacity: 1;
+transform: translateY(0);
 }
 }
 
@@ -179,8 +184,6 @@ overflow: hidden;
 @media screen and (max-width: 767px) {
 position: relative;
 overflow: hidden;}
-
-
 
 &::before{
 display: inline-block;
@@ -198,8 +201,30 @@ transition-property: background-color;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;}
 
+}
+
+
+&:hover::before {
+opacity: 1;
+transform: translateY(0);
+transition: transform 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
+
+}
+
+&:focus::before {
+opacity: 1;
+transform: translateY(0);
+transition: transform 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
+
+}
+
+
+.foto--list__overlay::before{
 @media screen and (max-width: 767px) {
-before{
 display: inline-block;
 content:"";
 width: 370px;
@@ -214,66 +239,27 @@ transform: translateY(100%);
 transition-property: background-color;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
+}}
 
-position: absolute;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.55;
-text-align: left;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-padding: 63px 24px;
-width: 370px;
-height: 294px;
-opacity: 0;
-transition-property: background-color;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-bottom: 100px;
-padding-top: 27px;
-overflow: hidden;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-}
-
-
-&:hover::before {
-opacity: 1;
-transform: translateY(0);
-transition: transform 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-overflow: hidden;
-
+.foto--list__overlay:hover::before{
 @media screen and (max-width: 767px) {
-hover::before {
-opacity: 1;
-transform: translateY(0);
-transition: transform 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-overflow: hidden;}
-}
-}
-
-&:focus::before {
 opacity: 1;
 transform: translateY(0);
 transition: transform 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
+}}
 
+.foto--list__overlay:focus::before{
 @media screen and (max-width: 767px) {
-focus::before {
 opacity: 1;
 transform: translateY(0);
 transition: transform 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-overflow: hidden;}
-}
-}
-}
+overflow: hidden;
+}}
+
+
 
 .foto--list__text {
 position: absolute;
@@ -297,6 +283,7 @@ overflow: hidden;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+
 @media screen and (max-width: 767px){
 position: absolute;
 font-family: 'Roboto';
@@ -332,7 +319,7 @@ margin-bottom: 4px;
 text-align: left;
 }
 
-.foto--list__project {
+.foto--list__project{
 color: #757575;
 font-weight: 400;
 font-size: 16px;
