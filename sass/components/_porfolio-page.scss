@@ -14,9 +14,7 @@ width: 768px;
 }
 @media screen and (min-width: 1200px) {
 width: 1200px;
-
 }
-
 }
 .visually-hidden{    
   position: absolute;
@@ -161,8 +159,8 @@ overflow: hidden;
 opacity: 1;
 transform: translateY(0);
 }
-
 }
+
 .foto--list__images:hover .foto--list__overlay::before{
 opacity: 1;
 transform: translateY(0);
@@ -201,26 +199,20 @@ transition-property: background-color;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;}
 
-}
-
-
 &:hover::before {
 opacity: 1;
 transform: translateY(0);
 transition: transform 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
-
 }
-
 &:focus::before {
 opacity: 1;
 transform: translateY(0);
 transition: transform 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
-
-}
+}}
 
 
 .foto--list__overlay::before{
