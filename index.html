@@ -21,28 +21,24 @@
         <nav class="nav">
         
        <a href="./index.html"><span class="nav-logo__color">Web</span><span class="nav__logo">Studio</span></a>
-        <button type="button" class="menu-button is-open" 
-         aria-expanded="false"
-         aria-controls="menu-container"
-         data-menu-button >
-
-            <svg width="40" height="40" aria-label="переключатель мобильного меню">
-          <use class="icon-close-black" href="./images/symbol-defs.svg#icon-close-black"></use>
-        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use> 
-            </svg>
-        </button>
-        <div class="menu-container" id="menu-container" data-menu>Меню</div>
         <ul class="site-nav" >
             <li class="site-nav__list"> <a href="index.html" class="site-nav__item current">Студія</a></li>
             <li class="site-nav__list"> <a href="porfolio.html" class="site-nav__item">Портфоліо</a></li>
             <li class="site-nav__list"> <a href="" class="site-nav__item">Контакти</a></li>
         </ul>
-        
         </nav>
         <ul class="nav-contact">
         <li class="nav-contact__list"><a href="mailto:info@devstudio.com" class="nav-contact__mailto"><svg class="nav-contact__message"><use href="./images/icons.svg#envelope1"></use></svg> info@devstudio.com </a></li>
         <li class="nav-contact__list"><a href="tel:+380961111111" class="nav-contact__tel"><svg class="nav-contact__phone"><use href="./images/icons.svg#smartphone1"></use></svg> +38 096 111 11 11 </a></li>
         </ul>
+          <button class="menu-toggle js-open-menu" 
+         aria-expanded="false"
+         aria-controls="menu-container"
+         data-menu-button >
+            <svg width="40" height="40" aria-label="переключатель мобильного меню">
+        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use> 
+            </svg>
+        </button>
     </div>
     </header>
 
@@ -285,7 +281,26 @@
 </div>
 </section>
 </main>
-
+<div class="menu-container js-menu-container id="mobile-menu">
+ <button class="menu-toggle js-close-menu" 
+         aria-expanded="false"
+         aria-controls="menu-container">
+            <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                <use class="icon-close-black" href="./images/symbol-defs.svg#icon-close-black"></use></svg></button>
+    <ul class="mobile-menu" >
+        <li class="site-nav__list"> <a href="index.html" class="site-nav__item current">Студія</a></li>
+        <li class="site-nav__list"> <a href="porfolio.html" class="site-nav__item">Портфоліо</a></li>
+        <li class="site-nav__list"> <a href="" class="site-nav__item">Контакти</a></li>
+        <li class="nav-contact__list"><a href="mailto:info@devstudio.com" class="nav-contact__mailto"><svg class="nav-contact__message"><use href="./images/icons.svg#envelope1"></use></svg> info@devstudio.com </a></li>
+        <li class="nav-contact__list"><a href="tel:+380961111111" class="nav-contact__tel"><svg class="nav-contact__phone"><use href="./images/icons.svg#smartphone1"></use></svg> +38 096 111 11 11 </a></li>
+        <ul>
+        <li><a href=""></a>Instagram</li>
+        <li><a href=""></a>Twitter</li>
+        <li><a href=""></a>Facebook</li>
+        <li><a href=""></a>LinkedIn</li>
+        </ul>
+    </ul>
+</div>
 <!--футер-->
 <footer class="page-footer">
 <div class="container-footer">
@@ -325,7 +340,13 @@
 </div>
 </footer>
 <script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
+ <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
     
