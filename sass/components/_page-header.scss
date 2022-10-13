@@ -120,7 +120,7 @@ transition-delay: 0;
     @media screen and (max-width: 768px) {
  display: flex;
  flex-wrap: wrap;
-margin: 0;
+margin-left: auto;
     }
     }
 
@@ -146,6 +146,12 @@ display: inline-flex;
 
  @media screen and (max-width: 768px) {
 margin-right: 0px;
+}
+}
+
+ @media screen and (max-width: 768px) {
+.site-nav__list:last-child {
+margin-right: 60px;
 }
 }
 
