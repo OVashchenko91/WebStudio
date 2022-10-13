@@ -4,9 +4,19 @@ display: flex;
 background-color: hwb(235 18% 77%);
 padding-top: 60px;
 padding-bottom: 60px;
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 480px) {
 background-color: #2f303a;
 display: block;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+background-color: #2f303a;
+display: block;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 }
 
@@ -16,14 +26,25 @@ width: 1200px;
 display: flex;
 align-items: baseline;
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+width: 480px;
+display: block;
+text-align: center;
+
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
 width: 768px;
 display: flex;
 flex-wrap: wrap;
 padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
 padding-top: 60px;
 padding-bottom: 60px;
 
@@ -41,7 +62,12 @@ margin-bottom: 20px;
 
 
 .logo__footer {
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+width: 100%;
+text-align: center;
+}
+
+@media screen and (max-width: 768px) {
 width: 50%;
 text-align: center;
 }
@@ -49,7 +75,12 @@ text-align: center;
 
 .footer--follow {
 margin-left: 70px;
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+width: 100%;
+text-align: center;}
+
+margin-left: 0px;
+@media screen and (max-width: 768px) {
 width: 50%;
 text-align: center;
 margin-left: 0px;
@@ -65,14 +96,21 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
 display: block;
-
+}
+@media screen and (max-width: 768px) {
+display: block;
 }
  }
 
  .footer--form {
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+text-align: center;
+display: block;
+
+}
+@media screen and (max-width: 768px) {
 text-align: center;
 display: block;
 
@@ -261,9 +299,12 @@ transition-delay: 0;
     display: flex;
     position: absolute;
     margin-top: 20px;
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
 display: block;
+}
 
+@media screen and (max-width: 768px) {
+display: block;
 }
 }
     
@@ -296,7 +337,13 @@ text-align: center;
 
     .footer__form {
     margin-left: 94px;
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 480px) {
+margin-top: 60px;
+margin-left: auto;
+margin-right: auto;
+}  
+@media screen and (max-width: 768px) {
 margin-top: 60px;
 margin-left: auto;
 margin-right: auto;

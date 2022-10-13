@@ -23,8 +23,11 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
   width: 354px;
+  }
+  @media screen and (max-width: 480px) {
+  width: 450px;
   }
   }
 
@@ -42,7 +45,16 @@ padding: 0px;
 
 
 
-@mixin container {
+
+
+
+ @mixin section {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+
+ @mixin container {
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -51,15 +63,6 @@ padding: 0px;
     align-items: center;
     
 }
-
-
- @mixin section {
-    text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
- }
-
 
 @mixin logo {
     font-size: 26px;
