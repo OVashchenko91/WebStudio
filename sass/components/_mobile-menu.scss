@@ -15,11 +15,16 @@ padding: 32px;
 background-color: rgba(255, 255, 255, 1);
 z-index: 999;
 transform: translateX(100%);
+overflow-y: scroll;
 
 &.is-open {
 transform: translateX(0);
 }
 transition: transform 250ms ease-in-out;
+}
+
+.modal-mobile {
+padding: 15px 15px;
 }
 
 .mobile-menu {
@@ -28,7 +33,11 @@ margin: 0;
 list-style: none;
 }
 
-
+@media (min-width: 480px){
+.menu-toggle {
+display: none;
+}
+}
 @media (min-width: 768px){
 .menu-toggle {
 display: none;
@@ -38,6 +47,13 @@ display: none;
 .menu-toggle {
 display: flex;
 }
+
+@media (min-width: 1200px){
+.menu-toggle {
+display: none;
+}
+}
+
 }
 
 .menu-toggle {

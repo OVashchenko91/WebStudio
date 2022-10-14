@@ -6,7 +6,21 @@
     padding-top: 0px;
     padding-bottom: 94px;
     
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+@media screen and (min-width: 480px) {
 position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -28,6 +42,16 @@ position: absolute;
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
+
+@media screen and (min-width: 480px) {
+width: 480px;
+}
+@media screen and (min-width: 768px) {
+width: 768px;
+}
+@media screen and (min-width: 1200px) {
+width: 1200px;
+}
 }
 
 

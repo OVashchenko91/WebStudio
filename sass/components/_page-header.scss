@@ -4,33 +4,31 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .container__nav {
-@media screen and (min-width: 1199px) {
 @include container;
-display: flex;}
+display: flex;
 
-@media screen and (min-width: 767px) {
-width: 768px;
-margin: auto;
-display: inline-flex;
-padding-top: 16px;
-padding-bottom: 16px;
-}
-
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 480px) {
 width: 480px;
 margin: auto;
 display: inline-flex;
 padding-top: 16px;
 padding-bottom: 16px;
 }
-@media screen and (min-width: 1199px) {
-@include container;
-display: flex;}
+@media screen and (min-width: 768px) {
+width: 768px;
+margin: auto;
+display: inline-flex;
 
 }
 
+@media screen and (min-width: 1200px) {
+width: 1200px;
+display: flex;
+
+}}
+
 .nav {
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 display: flex;
 align-items: center;}
 }
@@ -52,7 +50,7 @@ color:#2196F3;
 .site-nav {
 display: inline-flex;
 margin-left: 93px;
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 margin-left: 87px;}
 }
 @media (max-width: 767px){
@@ -121,7 +119,7 @@ transition-delay: 0;
     display: flex;
     margin: auto;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
  display: flex;
  flex-wrap: wrap;
 margin-left: auto;
@@ -148,12 +146,12 @@ display: inline-flex;
 
 }
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 767px) {
 margin-right: 0px;
 }
 }
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 767px) {
 .site-nav__list:last-child {
 margin-right: 60px;
 }
@@ -205,7 +203,6 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-delay: 0;
     }
-    
     }
 
     
@@ -233,12 +230,18 @@ transition-delay: 0;
     font-weight: 500;
     line-height: 1.14;
     }
-
-     @media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
  padding-top: 0px;
-    padding-bottom: 21px;
+ padding-bottom: 10px;
+  
 }
-    }
+@media screen and (min-width: 1200px) {
+ padding-top: 32px;
+ padding-bottom: 32px;
+  
+}
+}
+    
 
     .nav-contact__mailto {
     color: #757575;
@@ -258,10 +261,17 @@ transition-delay: 0;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-    }
+    }}
 
-      @media screen and (max-width: 768px) {
- padding-top: 21px;
+.nav-contact__mailto {
+
+@media screen and (min-width: 768px){
+padding-top: 6px;
 padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+ padding-top: 32px;
+ padding-bottom: 32px;
+  
 }
 }
