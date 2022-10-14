@@ -4,10 +4,11 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .container__nav {
+@media screen and (min-width: 1199px) {
 @include container;
-display: flex;
+display: flex;}
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767px) {
 width: 768px;
 margin: auto;
 display: inline-flex;
@@ -15,13 +16,16 @@ padding-top: 16px;
 padding-bottom: 16px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 479px) {
 width: 480px;
 margin: auto;
 display: inline-flex;
 padding-top: 16px;
 padding-bottom: 16px;
 }
+@media screen and (min-width: 1199px) {
+@include container;
+display: flex;}
 
 }
 
