@@ -1427,7 +1427,7 @@ header {
   -webkit-transition-delay: 0;
           transition-delay: 0;
 }
-.portfolio--buttons .iportfolio--buttons__item:first-child {
+.portfolio--buttons .portfolio--buttons__item:first-child {
   margin-left: 0px;
 }
 @media screen and (max-width: 480px) {
@@ -1437,11 +1437,33 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
 .portfolio--buttons__item {
   margin-left: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio--buttons__item:nth-child(3n) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio--buttons__item:nth-child(4n) {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio--buttons__item:nth-child(5n) {
+    margin-top: 15px;
+  }
 }
 
 .foto--list__item {
