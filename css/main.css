@@ -995,7 +995,7 @@ header {
   padding-top: 0px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
   .section-portfolio {
     position: absolute;
     white-space: nowrap;
@@ -1010,7 +1010,7 @@ header {
     margin: -1px;
   }
 }
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 1199px) {
   .section-portfolio {
     position: absolute;
     white-space: nowrap;
@@ -1032,7 +1032,7 @@ header {
   padding-right: 15px;
   padding-left: 15px;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
