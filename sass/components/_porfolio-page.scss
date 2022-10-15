@@ -6,7 +6,7 @@
 .container-porfolio {
 @include container;
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) {
 width: 480px;
 }
 @media screen and (min-width: 768px) {
@@ -45,7 +45,7 @@ transition-delay: 0;
 & .portfolio--buttons__item:first-child{
 margin-left: 0px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
@@ -59,21 +59,21 @@ margin-left: 8px;
 }
 
 .portfolio--buttons__item:nth-child(3n){
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 margin-right: 50px;
 
 }
 }
 
 .portfolio--buttons__item:nth-child(4n){
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 margin-left: 0px;
 margin-top: 15px;
 }
 }
 
 .portfolio--buttons__item:nth-child(5n){
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 
 margin-top: 15px;
 }
@@ -105,11 +105,11 @@ margin-right: 0px;
 &:nth-last-child(-n+3){
 margin-bottom: 0px;
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 margin-bottom: 30px; 
 }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 margin-right: 0px;
 margin-left: 0px;
 
@@ -119,7 +119,7 @@ img {
     height: auto;}
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 margin-bottom: 30px; 
 
 img {

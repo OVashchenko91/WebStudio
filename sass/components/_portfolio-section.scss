@@ -20,7 +20,7 @@ position: absolute;
     margin: -1px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) {
 position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -43,7 +43,7 @@ position: absolute;
     padding-right: 15px;
     padding-left: 15px;
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) {
 width: 480px;
 }
 @media screen and (min-width: 768px) {

@@ -7,7 +7,7 @@
 .container {
 @include container;
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) {
 width: 480px;
 }
 @media screen and (min-width: 768px) {
@@ -47,7 +47,7 @@ display: flex;
   }
   */
 
-   @media screen and (min-width: 480px) and (max-width: 767px) {
+   @media screen and (min-width: 0px) and (max-width: 767px) {
   .card-set {
     display: block;}}
 
@@ -69,7 +69,7 @@ display: flex;
     @include card-set;
     background-image: url("../images/antenna1.svg");
    
-     @media screen and (min-width: 480px) and (max-width: 767px) {
+     @media screen and (min-width: 0px) and (max-width: 767px) {
   width: 450px;
     }
      @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -81,7 +81,7 @@ display: flex;
     background-image: url("../images/astronaut1.svg");
 
     
-     @media screen and (min-width: 480px) and (max-width: 767px) {
+     @media screen and (min-width: 0px) and (max-width: 767px) {
   width: 450px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -93,7 +93,7 @@ display: flex;
     @include card-set;
     background-image: url("../images/clock1.svg");
   
-     @media screen and (min-width: 480px) and (max-width: 767px) {
+     @media screen and (min-width: 0px) and (max-width: 767px) {
   width: 450px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -105,7 +105,7 @@ display: flex;
     @include card-set;
     background-image: url("../images/diagram1.svg");
     
-     @media screen and (min-width: 480px) and (max-width: 767px) {
+     @media screen and (min-width: 0px) and (max-width: 767px) {
   width: 450px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -120,7 +120,7 @@ display: flex;
 }
 
  .card-set__list {
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   margin: 0px;
   margin-bottom: 30px;
   width: 450px;
