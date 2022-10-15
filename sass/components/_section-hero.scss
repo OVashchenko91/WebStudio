@@ -12,12 +12,6 @@
     background-position: center;
     background-size: cover;
 
-@media screen and (max-width: 479px) {
-max-width: 479px;
-}
-@media screen and (max-width: 767px) {
-max-width: 767px;
-}
  }
 
 .container {
@@ -53,7 +47,7 @@ width: 1200px;
     width: 696px;
     text-align: center;
 
-    @media screen and (max-width: 479px) {
+   @media screen and (min-width: 480px) and (max-width: 767px) {
     font-size: 26px;
     text-align: center;
     width: 360px;
