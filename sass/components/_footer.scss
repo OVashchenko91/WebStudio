@@ -14,7 +14,7 @@ width: 1200px;
 display: flex;
 align-items: baseline;
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 width: 480px;
 display: block;
 text-align: center;
@@ -48,7 +48,7 @@ margin-bottom: 20px;
 
 
 .logo__footer {
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 width: 100%;
 text-align: center;
 }
@@ -64,7 +64,7 @@ margin-bottom: auto;
 
 .footer--follow {
 margin-left: 70px;
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 width: 100%;
 text-align: center;
 margin-left: 0px;
@@ -87,7 +87,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 display: block;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -96,7 +96,7 @@ display: block;
  }
 
  .footer--form {
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 text-align: center;
 display: block;
 
@@ -293,7 +293,7 @@ transition-delay: 0;
     display: flex;
     position: absolute;
     margin-top: 20px;
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 display: block;
  position:inherit;
 }
@@ -327,14 +327,18 @@ color: #FFFFFF;
 display: inline-flex;
 text-align: center;
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+display: flex;
+margin: auto;
 
+}
     }
 
 
     .footer__form {
     margin-left: 94px;
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 margin-top: 60px;
 margin-left: auto;
 margin-right: auto;
@@ -343,6 +347,10 @@ margin-right: auto;
 text-align: center;
 margin-top: 60px;
 width: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
 }
 
     }
@@ -359,7 +367,7 @@ padding-bottom: 15px;
 padding-left: 15px;
 color: rgba(255, 255, 255, 0.6);
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 width: 100%;
 margin-bottom: 20px;
 

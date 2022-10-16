@@ -17,20 +17,25 @@ z-index: 999;
 transform: translateX(100%);
 overflow-y: scroll;
 
+
 &.is-open {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 transform: translateX(0);
-}
+}}
 transition: transform 250ms ease-in-out;
 }
 
 
 .mobile-menu {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 padding: 0;
 margin: 0;
 list-style: none;
-}
+display: flex;
+flex-direction: column;
+}}
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 .menu-toggle {
 display: flex;
 }
