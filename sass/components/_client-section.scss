@@ -9,7 +9,7 @@
     padding-right: 15px;
     padding-left: 15px;
 @media screen and (min-width:320px) {
-width: 480px;
+width: 100%;
 }
 @media screen and (min-width: 768px) {
 width: 768px;
@@ -83,9 +83,8 @@ weight: 90px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-    width: 170px;
-    height: 92px;  
+    height: 92px;
+ 
     transition-property: background-color, box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,8 +105,7 @@ transition-delay: 0;}
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
  margin-right: 0px;
-width: 210px;
-hover, focus { 
+&:hover, focus { 
  border: 1px solid #2196F3;
     border-radius: 4px;
     width: 100%;
