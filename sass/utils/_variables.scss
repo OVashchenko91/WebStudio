@@ -22,16 +22,8 @@ body {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
-    width: 450px;
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  width: 354px;
-  }
-@media screen and (min-width: 1200px) {
-  width: 370px;
-  }
-  }
+    height: auto;}
+  
 
 
 a {text-decoration: none;
@@ -76,7 +68,6 @@ padding: 0px;
 @mixin card-set {
   display: block;
     content: "";
-    width: 270px;
     height: 120px;
     background-size: 70px;
     background-repeat: no-repeat;

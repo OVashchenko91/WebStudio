@@ -30,87 +30,57 @@ width: 1200px;
   clip-path: inset(50%);
   margin: -1px;
     }
-.card-set {
-display: flex;
- 
-}
-/*.card-set {
 
-  @media screen and (max-width: 479px) {
-  display: block;
- }
-  @media screen and (max-width: 767px) {
+.card-set {
+   @media screen and (min-width: 320px) and (max-width: 767px) {
+  display: block;}
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
-  justify-content: center;
-  }
-  */
+  justify-content: center;}
 
-   @media screen and (min-width: 320px) and (max-width: 767px) {
-  .card-set {
-    display: block;}}
-
-     @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card-set {
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  justify-content: center;
+   @media screen and (min-width: 1200px){
+display: flex;
   }} 
+
+
 
 
 
     .card-set__list {
     margin-right: 30px;
     text-align: left;
-    
+   
+
+
+
     &:nth-child(1)::before {
     @include card-set;
     background-image: url("../images/antenna1.svg");
    
-     @media screen and (min-width: 320px) and (max-width: 767px) {
-  width: 450px;
-    }
-     @media screen and (min-width: 768px) and (max-width: 1199px) {
-  width: 354px;
-    }
+   
   }
     &:nth-child(2)::before {
     @include card-set;
     background-image: url("../images/astronaut1.svg");
 
     
-     @media screen and (min-width: 0px) and (max-width: 767px) {
-  width: 450px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-  width: 354px;
-    }
     }
 
    &:nth-child(3)::before {
     @include card-set;
     background-image: url("../images/clock1.svg");
   
-     @media screen and (min-width: 320px) and (max-width: 767px) {
-  width: 450px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-  width: 354px;
-    }
+   
     }
 
     &:nth-child(4)::before {
     @include card-set;
     background-image: url("../images/diagram1.svg");
     
-     @media screen and (min-width: 320px) and (max-width: 767px) {
-  width: 450px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-  width: 354px;
-    }
+   
     }
 
     &:last-child {
@@ -123,14 +93,14 @@ display: flex;
 @media screen and (min-width: 320px) and (max-width: 767px) {
   margin: 0px;
   margin-bottom: 30px;
-  width: 450px;
-  }
+}
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
   margin: 0px;
   margin-bottom: 30px;
-  width: 354px;
   }
+  @media screen and (min-width: 1200px){
+  margin: 15px;}
   }
 
  
@@ -145,6 +115,10 @@ display: flex;
     color: #212121;
     margin-bottom: 10px;
     margin-top: 30px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
+    }
 
     }
 
