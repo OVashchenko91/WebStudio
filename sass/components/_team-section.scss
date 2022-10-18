@@ -48,7 +48,8 @@ display: flex;
     .team__list {
    
     @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-right: 0px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
    max-width: 480px;
    background: #FFFFFF;

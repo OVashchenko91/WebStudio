@@ -1,6 +1,6 @@
 
 .page-footer {
-display: flex;
+
 background-color: hwb(235 18% 77%);
 padding-top: 60px;
 padding-bottom: 60px;
@@ -10,30 +10,23 @@ margin: auto;
 }
 
 .container-footer {
-margin-left: auto;
-margin-right: auto;
-width: 1200px;
-display: flex;
-align-items: baseline;
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
 width: 100%;
-display: block;
 text-align: center;
-padding-left: 15px;
-padding-right: 15px;
+padding: 0 15px;
 margin-left: auto;
 margin-right: auto;
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-width: 768px;
-display: flex;
-flex-wrap: wrap;
-padding-left: 15px;
-padding-right: 15px;
-margin-left: auto;
-margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
 
 }
 @media screen and (min-width: 1200px) {
@@ -42,6 +35,7 @@ margin-right: auto;
 width: 1200px;
 display: flex;
 align-items: baseline;
+padding: 0 15px;
 }}
 
 
@@ -56,12 +50,11 @@ margin-bottom: 20px;
 
 .logo__footer {
 @media screen and (min-width: 0px) and (max-width: 767px) {
-width: 100%;
+
 text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-width: 50%;
 text-align: center;
 margin-bottom: auto;
 }
@@ -72,14 +65,13 @@ margin-bottom: auto;
 .footer--follow {
 margin-left: 70px;
 @media screen and (min-width: 0px) and (max-width: 767px) {
-width: 100%;
+
 text-align: center;
 margin-left: 0px;
 margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-width: 50%;
 text-align: center;
 margin-left: 0px;
 }

@@ -5,15 +5,19 @@
 
 .container-porfolio {
 @include container;
+margin: 0 auto;
 
 @media screen and (min-width: 0px) {
 width: 100%;
+margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
 width: 768px;
+margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
 width: 1200px;
+margin: 0 auto;
 }
 }
 
@@ -45,46 +49,31 @@ transition-delay: 0;
 & .portfolio--buttons__item:first-child{
 margin-left: 0px;
 }
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
+    max-width: 400px;
+    justify-content: start;
+    margin-left: auto;
+    margin-right: auto;}
 }
 
+.portfolio--buttons__item:nth-last-child(-n + 2) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+margin-top: 15px;}
 }
 
 .portfolio--buttons__item{
-margin-left: 8px;
+margin-right: 8px;
 
 }
 
-.portfolio--buttons__item:nth-child(3n){
-@media screen and (min-width: 0px) and (max-width: 767px) {
-margin-right: 50px;
-
-}
-}
-
-.portfolio--buttons__item:nth-child(4n){
-@media screen and (min-width: 0px) and (max-width: 767px) {
-margin-left: 0px;
-margin-top: 15px;
-}
-}
-
-.portfolio--buttons__item:nth-child(5n){
-@media screen and (min-width: 0px) and (max-width: 767px) {
-
-margin-top: 15px;
-}
-}
 
 
 .foto--list__item {
 width: 450px;
 margin-bottom: 30px;
-
-
 
 @media screen and (min-width: 1200px) {
 width: 370px;
@@ -186,6 +175,7 @@ padding:20px 24px 56px 24px;}
 .foto--list {
 display: flex;
 flex-wrap: wrap;
+justify-content: space-around;
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   display: grid;
