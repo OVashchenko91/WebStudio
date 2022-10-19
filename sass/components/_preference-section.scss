@@ -98,11 +98,28 @@ display: flex;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
   margin: 0px;
   margin-bottom: 30px;
+
+    &:last-child {
+    margin-right: 0px;
+    }
+
   }
   @media screen and (min-width: 1200px){
   margin: 15px;}
   }
 
+  .card-set__list:nth-child(n + 3){
+  
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+ 
+  margin-bottom: 0px;
+  }}
+ .card-set__list:nth-child(n + 4){
+  
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+ 
+  margin-bottom: 0px;
+  }}
  
 
 

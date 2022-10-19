@@ -10,21 +10,21 @@ margin: auto;
 }
 
 .container-footer {
-
-width: 100%;
-text-align: center;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+max-width: 480px;
 padding: 0 15px;
 margin-left: auto;
 margin-right: auto;
+display: flex;
+flex-direction: column;
+    align-items: center;}
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: baseline;
     text-align: center;
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
 
@@ -32,7 +32,7 @@ margin-right: auto;
 @media screen and (min-width: 1200px) {
 margin-left: auto;
 margin-right: auto;
-width: 1200px;
+max-width: 1200px;
 display: flex;
 align-items: baseline;
 padding: 0 15px;
@@ -49,14 +49,15 @@ margin-bottom: 20px;
 
 
 .logo__footer {
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
 text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 text-align: center;
-margin-bottom: auto;
+margin-bottom: 60px;
+width: 50%;
 }
 
 
@@ -64,7 +65,7 @@ margin-bottom: auto;
 
 .footer--follow {
 margin-left: 70px;
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
 text-align: center;
 margin-left: 0px;
@@ -74,6 +75,7 @@ margin-top: 60px;
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 text-align: center;
 margin-left: 0px;
+width: 50%;
 }
 }
 
@@ -338,12 +340,15 @@ margin: auto;
 
 
     .footer__form {
-    margin-left: 94px;
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 margin-top: 60px;
 margin-left: auto;
 margin-right: auto;
+text-align: center;
+width: 100%;
+
+
 }  
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 text-align: center;
@@ -355,11 +360,19 @@ display: flex;
 flex-direction: column;
 }
 
+@media screen and (min-width: 1200px) {
+margin-left: 94px;
+
+}
+
     }
 
     .footer__placeholder {
-    width: 358px;
-    height: 50px;
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+width: 100%;
+margin-bottom: 20px;
+height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
@@ -369,18 +382,32 @@ padding-bottom: 15px;
 padding-left: 15px;
 color: rgba(255, 255, 255, 0.6);
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
-width: 100%;
-margin-bottom: 20px;
-
 }  
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 width: 450px;
 margin-bottom: 20px;
-
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: #2F303A;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+color: rgba(255, 255, 255, 0.6);
 }
 
-    }
+@media screen and (min-width: 1200px){
+width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: #2F303A;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+color: rgba(255, 255, 255, 0.6);
+    }}
 
 .footer--contacts__adress {
     font-size: 14px;
